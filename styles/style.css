@@ -1,0 +1,264 @@
+*{
+	box-sizing: border-box;	
+}
+
+.section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Lato';
+	padding: 120px 0;
+	width: 100%;
+
+}
+
+.container{
+	width: 100%;
+	max-width: 900px;
+		
+}
+
+[class*= cont-]{
+	border-bottom: 2px solid currentColor;
+	border-right:2px solid currentColor ;
+	border-left:2px solid currentColor ;	
+
+	font-family: 'Lato';
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;	
+	padding: 0 170px 60px 170px ;
+	position: relative;
+	
+}
+
+ [class*= cont-]:before,
+ [class*= cont-]:after{
+	content: "";
+	background-color: currentColor;
+	height: 2px;
+	position: absolute;
+	top:0;	
+	width: 25%;
+} 
+
+[class*= cont-]:before{
+	left:0;	
+} 
+
+[class*= cont-]:after{
+	right:0;	
+} 
+
+.section-title{
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: bold;
+	margin: 0;
+	position: relative;
+	top: -20px;
+	width: 100%;
+	text-align: center;	
+
+}
+
+.description{
+	display: inline-block;
+	margin: 0;
+}
+
+
+/*    HEADER                                      HEADER                            HEADER                           HEADER*/
+.header{
+	color: #fff;
+	background-image: url(../images/hero-bg.jpg);
+	background-color: #adb8cc;
+	background-repeat: no-repeat;
+	background-size:cover;
+	text-transform: uppercase;
+}
+
+.logo-svg{
+ margin-bottom: 90px;
+ max-width:69px;
+ max-height: 71px;
+}
+
+.title{	
+	font-weight: bolder;
+	font-size: 54px;
+	margin: 0;
+	margin-bottom: 55px;
+	letter-spacing: 5px;
+}
+
+.title-text{
+	margin: 0;
+	font-size: 15px;
+	margin-bottom: 230px;
+	line-height: 29px;
+}
+
+.scroll-link{
+	color:currentColor;
+	position: relative;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 115px;
+	margin: auto;
+	
+}
+
+.scroll{
+	max-width:23px;
+	max-height: 37px;	
+}
+
+/*ABOUT                                 ABOUT                                 ABOUT                        ABOUT*/
+
+
+/*SERVICES                              SERVICES                              SERVICES                      SERVICES*/
+
+.services{
+	background-image: url(../images/services.jpg);
+	background-color: #adb8cc;
+	background-repeat: no-repeat;
+	background-size:cover;
+	color: #fff;
+}
+
+
+/*WHATWEDO                            WHATWEDO                                WHATWEDO                           WHATWEDO*/
+.wwd-title{
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 40px 0;
+}
+.wwd-desc{
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.www-item{
+	max-width: 80px;
+	max-height: 90px;
+	margin-top:100px;
+}
+
+/*PROJECTS                                 PROJECTS                        PROJECTS                          PROJECTS           */
+
+.projects{      
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
+}
+
+.col-4-12{
+	width: 28%;
+	position: relative;
+	display: flex;
+	min-height: 240px;
+	margin: 10px 0 0 0;
+
+}
+
+  .big-pic{
+	flex-grow: 1;
+	margin: 10px 10px 0 10px;	
+}  
+
+.img-title{
+	text-transform: uppercase;
+	font-size: 34px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #fff;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 50px;
+	left:40px;	
+	
+}
+
+.project-img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+/*CONTACTUS                              CONTACTUS                                  CONTACTUS                   CONTACTUS*/
+
+.contact-btn{
+	color: #fff;
+	border: 1px solid #3c3c3c;
+	background-color: #3c3c3c;
+	padding: 20px 135px;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	margin-top:50px;
+}
+
+.contact-btn:hover{
+	background-color: #fff;
+	color: #3c3c3c;
+	font-weight: bolder;
+}
+
+/*FOOTER                            FOOTER                                   FOOTER                               FOOTER*/
+.footer{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-txt{
+	margin: 0;
+	padding-left: 40px;
+	font-size: 14px;
+}
+
+.footer-logo{
+	color:currentColor;
+}
+
+.logo-svg-footer{	
+	position: relative;
+	top: -10px;
+	max-width: 35px;
+	max-height: 37px;	
+}
+
+/*SVG                             SVG                                 SVG                                SVG*/
+.visually-hidden{
+	position: absolute;
+	height: 1px;
+	left: -999999px;
+	width: 1px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.cls-icon-wwd{
+	fill: #3c3c3c;
+	fill-rule: inherit;
+}
+
+.triangle-svg,
+.circle-svg{
+	fill: none;
+	stroke-width: 2px;
+	stroke: currentColor;
+}
+
+.dot-svg,
+.scroll{
+	fill:currentColor;
+}
